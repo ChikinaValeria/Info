@@ -1,0 +1,29 @@
+(env) C:\Devel\python_training\test>py.test test_add_entry.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.12.1, pytest-7.4.4, pluggy-1.3.0
+rootdir: C:\Devel\python_training\test
+collected 2 items
+
+test_add_entry.py EE                                                                                             [100%]
+
+======================================================= ERRORS ========================================================
+__________________________________________ ERROR at setup of test_add_entry ___________________________________________
+file C:\Devel\python_training\test\test_add_entry.py, line 7
+  def test_add_entry(app):
+E       fixture 'app' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Devel\python_training\test\test_add_entry.py:7
+____________________________________ ERROR at setup of test_add_almost_empty_entry ____________________________________
+file C:\Devel\python_training\test\test_add_entry.py, line 16
+  def test_add_almost_empty_entry(app):
+E       fixture 'app' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Devel\python_training\test\test_add_entry.py:16
+=============================================== short test summary info ===============================================
+ERROR test_add_entry.py::test_add_entry
+ERROR test_add_entry.py::test_add_almost_empty_entry
+================================================== 2 errors in 0.04s ==================================================
